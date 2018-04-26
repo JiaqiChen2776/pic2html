@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>看图写html（电影列表）</title>
+</head>
+
+<!--试写版-->
+<!--<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">正在热映......</h2>
+            <a href="#" class="movies_more">(更多)</a>
+        </div>
+        <div class="bd">
+            <div class="movie_list">
+                <div class="movie_pic">
+                    <a href="#" class="movie_pic"></a>
+                </div>
+                <div class="movie_info">
+                    <h5>狂暴巨兽</h5>
+                    <div class="score_st"></div><span class="score_num">6.7</span>
+                    <a href="#" class="buy_btn">选座购票</a>
+                </div> 
+
+                <div class="movie_pic">
+                    <a href="#" class="movie_pic"></a>
+                </div>
+                <div class="movie_info">
+                    <h5>21克拉</h5>
+                    <div class="score_st"></div><span class="score_num">5.3</span>
+                    <a href="#" class="buy_btn">选座购票</a>
+                </div>
+
+                <div class="movie_pic">
+                    <a href="#" class="movie_pic"></a>
+                </div>
+                <div class="movie_info">
+                    <h5>头号玩家</h5>
+                    <div class="score_st"></div><span class="score_num">8.9</span>
+                    <a href="#" class="buy_btn">选座购票</a>
+                </div>
+
+                <div class="movie_pic">
+                    <a href="#" class="movie_pic"></a>
+                </div>
+                <div class="movie_info">
+                    <h5>脱单告急</h5>
+                    <div class="score_st"></div><span class="score_num">5.7</span>
+                    <a href="#" class="buy_btn">选座购票</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>-->
+<!--要点：
+    结构
+    命名（避免1、2...）
+    不要忽略空格
+    （更多）本例 ->括号里套链接
+    img主要用于显示图片，如需链接，可用div包住，或者使用a标签
+    i标签可用于需要特殊样式的小文字
+    通用类与特用类一起使用-->
+
+<!--改进版-->
+<body>
+    <div class="container">
+        <div class="movies_section">
+            <h2>正在放映 &nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.
+                <span class="pl">
+                    &nbsp;(<a href="#" target="_self">更多</a>)
+                </span>
+            </h2>
+            <div class="movie_list list">
+                <ul>
+                    <li class="movie-item">
+                        <div class="movie-item__pic">  
+                            <img src="" alt="狂暴巨兽">
+                        </div>
+                        <div class="movie-item__info">
+                            <div class="movie-item__title">
+                                <a href="#">狂暴巨兽</a>
+                            </div>
+                            <div class="movie-rating">
+                                <span class="movie-rating__allstar35"></span>
+                                <i>6.7</i>
+                            </div>
+                            <a href="#" class="movie-btn__link movie-btn__ticket">选座购票</a>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <div class="movie-item__pic">  
+                            <img src="" alt="21克拉">
+                        </div>
+                        <div class="movie-item__info">
+                            <div class="movie-item__title">
+                                <a href="#">21克拉</a>
+                            </div>
+                            <div class="movie-rating">
+                                <span class="movie-rating__allstar35"></span>
+                                <i>5.3</i>
+                            </div>
+                            <a href="#" class="movie-btn__link movie-btn__ticket">选座购票</a>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <div class="movie-item__pic">  
+                            <img src="" alt="头号玩家">
+                        </div>
+                        <div class="movie-item__info">
+                            <div class="movie-item__title">
+                                <a href="#">头号玩家</a>
+                            </div>
+                            <div class="movie-rating">
+                                <span class="movie-rating__allstar35"></span>
+                                <i>8.9</i>
+                            </div>
+                            <a href="#" class="movie-btn__link movie-btn__ticket">选座购票</a>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <div class="movie-item__pic">  
+                            <img src="" alt="脱单告急">
+                        </div>
+                        <div class="movie-item__info">
+                            <div class="movie-item__title">
+                                <a href="#">脱单告急</a>
+                            </div>
+                            <div class="movie-rating">
+                                <span class="movie-rating__allstar35"></span>
+                                <i>5.7</i>
+                            </div>
+                            <a href="#" class="movie-btn__link movie-btn__ticket">选座购票</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
